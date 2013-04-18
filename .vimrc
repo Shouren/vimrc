@@ -12,7 +12,8 @@
  let g:NERDTreeWinPos = "right"
 
  set nocompatible               " be iMproved
- filetype off                   " required!
+ "filetype off                   " required!
+ filetype on
 
  set rtp+=~/.vim/bundle/vundle/
  call vundle#rc()
@@ -28,6 +29,7 @@
  Bundle 'Lokaltog/vim-easymotion'
  Bundle 'rstacruz/sparkup', {'rtp': 'vim/'}
  Bundle 'tpope/vim-rails.git'
+ Bundle 'kevinw/pyflakes-vim.git'
  " vim-scripts repos
  Bundle 'vim-scripts/taglist.vim.git'
  Bundle 'vim-scripts/ctags.vim.git'
