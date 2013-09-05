@@ -5,6 +5,12 @@
  set number
  syntax enable 
 
+ " No Arrow Keys
+ map <up>    <nop>
+ map <down>  <nop>
+ map <left>  <nop>
+ map <right> <nop>
+
  nnoremap <silent> <F2> :TlistToggle<CR>
  nnoremap <silent> <F3> :NERDTreeToggle<CR>
 
