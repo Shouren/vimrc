@@ -17,6 +17,7 @@
  let Tlist_Ctags_Cmd = '/usr/local/bin/ctags'
  let g:NERDTreeWinPos = "right"
 
+ set cc=79
  set nocompatible               " be iMproved
  "filetype off                   " required!
  filetype on
