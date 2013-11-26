@@ -19,6 +19,8 @@
  set hlsearch
  set cc=80
  hi ColorColumn ctermbg=lightgrey 
+ set wildmenu
+ set wildmode=longest:full,full
 
  set nocompatible               " be iMproved
  "filetype off                   " required!
