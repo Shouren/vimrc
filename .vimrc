@@ -21,6 +21,7 @@
  hi ColorColumn ctermbg=lightgrey 
  set wildmenu
  set wildmode=longest:full,full
+ set tags+=tags;
 
  set nocompatible               " be iMproved
  "filetype off                   " required!
