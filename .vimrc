@@ -9,7 +9,9 @@
  nnoremap <silent> <F3> :NERDTreeToggle<CR>
 
  " Settings
- syntax enable 
+ syntax enable
+ set background=light
+ colorscheme solarized
  set tabstop=4
  set shiftwidth=4
  set softtabstop=4
