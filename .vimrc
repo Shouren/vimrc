@@ -24,6 +24,7 @@
  set wildmenu
  set wildmode=longest:full,full
  set tags+=tags;
+ autocmd BufWritePost *.py call Flake8()
 
  set nocompatible               " be iMproved
  "filetype off                   " required!
