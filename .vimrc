@@ -33,6 +33,7 @@
  " Plugin
  let Tlist_Ctags_Cmd = '/usr/local/bin/ctags'
  let g:NERDTreeWinPos = "right"
+ let g:flake8_ignore="W291,W391,W601,E123,E124,E125,E126,E127,E128,E221,E225,E226,E261,E262,E272,E302,E501,E502,E711,E712"
 
  set rtp+=~/.vim/bundle/vundle/
  call vundle#rc()
