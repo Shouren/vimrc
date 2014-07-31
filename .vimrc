@@ -54,6 +54,7 @@
  Bundle 'rizzatti/funcoo.vim'
  Bundle 'rizzatti/dash.vim'
  Bundle 'nvie/vim-flake8'
+ Bundle 'altercation/vim-colors-solarized'
  " vim-scripts repos
  Bundle 'vim-scripts/taglist.vim.git'
  Bundle 'vim-scripts/ctags.vim.git'
