@@ -24,6 +24,8 @@
  set wildmenu
  set wildmode=longest:full,full
  set tags+=tags;
+ set listchars=tab:>>,trail:_
+ set list
 
  let Tlist_Ctags_Cmd = '/usr/local/bin/ctags'
  let g:NERDTreeWinPos = "right"
