@@ -57,6 +57,8 @@
  Bundle 'rizzatti/dash.vim'
  Bundle 'nvie/vim-flake8'
  Bundle 'altercation/vim-colors-solarized'
+ Bundle 'fatih/vim-go'
+ Bundle 'wincent/command-t.git'
  " vim-scripts repos
  Bundle 'vim-scripts/taglist.vim.git'
  Bundle 'vim-scripts/ctags.vim.git'
@@ -64,8 +66,5 @@
  Bundle 'vim-scripts/NERD_Tree-and-ack.git'
  Bundle 'L9'
  Bundle 'FuzzyFinder'
- " non github repos
- Bundle 'git://git.wincent.com/command-t.git'
- " ...
 
  filetype plugin indent on     " required!
