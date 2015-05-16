@@ -59,6 +59,7 @@
  Bundle 'altercation/vim-colors-solarized'
  Bundle 'fatih/vim-go'
  Bundle 'wincent/command-t.git'
+ Bundle 'rust-lang/rust.vim'
  " vim-scripts repos
  Bundle 'vim-scripts/taglist.vim.git'
  Bundle 'vim-scripts/ctags.vim.git'
