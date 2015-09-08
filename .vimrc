@@ -8,6 +8,14 @@
  nnoremap <silent> <F2> :TlistToggle<CR>
  nnoremap <silent> <F3> :NERDTreeToggle<CR>
 
+ nnoremap <silent> K <Plug>DashSearch
+
+ let g:dash_map = {
+     \ 'python'       : 'python2',
+     \ 'go'           : 'go',
+     \ 'c'            : 'c'
+     \ }
+
  " Settings
  syntax enable
  set background=light
@@ -20,7 +28,7 @@
  set showcmd
  set hlsearch
  set cc=80
- hi ColorColumn ctermbg=lightgrey 
+ hi ColorColumn ctermbg=lightgrey
  set wildmenu
  set wildmode=longest:full,full
  set tags+=tags;
@@ -31,18 +39,17 @@
  let g:NERDTreeWinPos = "right"
 
  autocmd BufWritePost *.py call Flake8()
- let g:flake8_ignore="W291,W391,W601,E123,E124,E125,E126,E127,E128,E221,E225,E226,E261,E262,E272,E302,E501,E502,E711,E712"
 
  set nocompatible               " be iMproved
  "filetype off                   " required!
  filetype on
- 
+
  " Plugin
  set rtp+=~/.vim/bundle/vundle/
  call vundle#rc()
 
  " let Vundle manage Vundle
- " required! 
+ " required!
  Bundle 'gmarik/vundle'
 
  " My Bundles here:
@@ -56,10 +63,9 @@
  Bundle 'rizzatti/funcoo.vim'
  Bundle 'rizzatti/dash.vim'
  Bundle 'nvie/vim-flake8'
- Bundle 'altercation/vim-colors-solarized'
  Bundle 'fatih/vim-go'
  Bundle 'wincent/command-t.git'
- Bundle 'rust-lang/rust.vim'
+ Bundle 'bling/vim-airline'
  " vim-scripts repos
  Bundle 'vim-scripts/taglist.vim.git'
  Bundle 'vim-scripts/ctags.vim.git'
