@@ -8,7 +8,7 @@
  nnoremap <silent> <F2> :TlistToggle<CR>
  nnoremap <silent> <F3> :NERDTreeToggle<CR>
 
- nnoremap <silent> K <Plug>DashSearch
+ nnoremap <silent> <F4> <Plug>DashSearch
 
  let g:dash_map = {
      \ 'python'       : 'python2',
@@ -38,6 +38,12 @@
  let Tlist_Ctags_Cmd = '/usr/local/bin/ctags'
  let g:NERDTreeWinPos = "right"
 
+ " Airline setting
+ set laststatus=2
+ let g:airline#extensions#tabline#enabled = 1
+ let g:airline#extensions#tabline#left_sep = ' '
+ let g:airline#extensions#tabline#left_alt_sep = '|'
+
  autocmd BufWritePost *.py call Flake8()
 
  set nocompatible               " be iMproved
@@ -66,6 +72,7 @@
  Bundle 'fatih/vim-go'
  Bundle 'wincent/command-t.git'
  Bundle 'bling/vim-airline'
+ Bundle 'altercation/vim-colors-solarized'
  " vim-scripts repos
  Bundle 'vim-scripts/taglist.vim.git'
  Bundle 'vim-scripts/ctags.vim.git'
