@@ -8,14 +8,6 @@
  nnoremap <silent> <F2> :TlistToggle<CR>
  nnoremap <silent> <F3> :NERDTreeToggle<CR>
 
- nnoremap <silent> <F4> <Plug>DashSearch
-
- let g:dash_map = {
-     \ 'python'       : 'python2',
-     \ 'go'           : 'go',
-     \ 'c'            : 'c'
-     \ }
-
  " Settings
  syntax enable
  set background=light
@@ -65,9 +57,7 @@
  Bundle 'Lokaltog/vim-easymotion'
  Bundle 'rstacruz/sparkup', {'rtp': 'vim/'}
  Bundle 'tpope/vim-rails.git'
- Bundle 'kevinw/pyflakes-vim.git'
  Bundle 'rizzatti/funcoo.vim'
- Bundle 'rizzatti/dash.vim'
  Bundle 'nvie/vim-flake8'
  Bundle 'fatih/vim-go'
  Bundle 'wincent/command-t.git'
