@@ -26,6 +26,7 @@
  set tags+=tags;
  set listchars=tab:>>,trail:_
  set list
+ set backspace=indent,eol,start
 
  let Tlist_Ctags_Cmd = '/usr/local/bin/ctags'
  let g:NERDTreeWinPos = "right"
