@@ -39,6 +39,15 @@
 
  autocmd BufWritePost *.py call Flake8()
 
+ " For Rust code completion and navigation
+ set hidden
+ let g:racer_cmd = "/Users/kimi/.cargo/bin/racer"
+ let g:racer_experimental_completer = 1
+ au FileType rust nmap gd <Plug>(rust-def)
+ au FileType rust nmap gs <Plug>(rust-def-split)
+ au FileType rust nmap gx <Plug>(rust-def-vertical)
+ au FileType rust nmap <leader>gd <Plug>(rust-doc)
+
  set nocompatible               " be iMproved
  "filetype off                   " required!
  filetype on
@@ -64,6 +73,8 @@
  Bundle 'wincent/command-t.git'
  Bundle 'bling/vim-airline'
  Bundle 'altercation/vim-colors-solarized'
+ Bundle 'rust-lang/rust.vim'
+ Bundle 'racer-rust/vim-racer'
  " vim-scripts repos
  Bundle 'vim-scripts/taglist.vim.git'
  Bundle 'vim-scripts/ctags.vim.git'
