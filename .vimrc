@@ -41,8 +41,9 @@
 
  " For Rust code completion and navigation
  set hidden
- let g:racer_cmd = "/Users/kimi/.cargo/bin/racer"
+ let g:racer_cmd = "racer"
  let g:racer_experimental_completer = 1
+ let g:rustfmt_autosave = 1
  au FileType rust nmap gd <Plug>(rust-def)
  au FileType rust nmap gs <Plug>(rust-def-split)
  au FileType rust nmap gx <Plug>(rust-def-vertical)
